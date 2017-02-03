@@ -1,0 +1,5 @@
+Alex Bristow entered the team as a fifth member and has been informed about previous decisions made by the team before his entry.
+The team decided to reassign the roles within the team (instead of just assigning roles to alex that had already been assigned to somebody else aswell) on a different meeting, because one of the team members is missing.
+The team decided to use trello as the main tool to maintain user stories and the progress of the scrum procedure (https://trello.com/guysguys).
+The draft portion of the product backlog is open for team members to fill with user stories until the next meeting (https://trello.com/b/TtoOSxSt/product-backlog).
+The next lesson is going to be scheduled on Tuesday (07/02) 11:30am in person at the Solent Library.
