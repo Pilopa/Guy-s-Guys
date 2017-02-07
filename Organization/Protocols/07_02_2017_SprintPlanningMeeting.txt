@@ -1,6 +1,6 @@
 Attended: Tiberiu, Alex, Philip, Konstantin
-Start: 15:00pm
-Finish:
+Start: 3:00pm
+Finish: 5:14pm
 
 The team estimated to work two hours in two timespans per week, one between tuesday
 and the weekend (First Meeting) and one between the weekend and tuesday (Second Meeting).
