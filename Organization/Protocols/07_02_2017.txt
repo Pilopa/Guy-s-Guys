@@ -1,6 +1,7 @@
 Attended: Ned, Alex, Konstantin
+Excused: Tiberiu
 Started: 12:00pm
-Finished: 
+Finished: 12:45pm
 Alex is going to take Requirement Analysis from Konstantin.
 Alex is also going to take a supporting role in every part he is good at (see team skills inventory) that needs help
 Konstantin is going to be assistant role for software architect, ned moves to main software architect.
