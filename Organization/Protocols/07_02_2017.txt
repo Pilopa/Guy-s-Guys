@@ -8,8 +8,3 @@ Konstantin is going to be assistant role for software architect, ned moves to ma
 The team decided not to push back the first sprint and instead use it as a trial to test organization and teamwork.
 The team came up with some prelimenary user stories. Alex noted down questions for the product owner.
 Next Meeting is going to be the Sprint Planning Meeting at 3:00pm on the same day.
-
-Sprint Planning Meeting:
-Attended: 
-Started: 3:00pm
-Finished: 
