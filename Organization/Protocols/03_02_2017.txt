@@ -1,3 +1,7 @@
+Skype Meeting
+Start: 18:15pm
+Finish: 19:30pm
+Attended: Alex, Ned, Konstantin, Tiberiu
 Alex Bristow entered the team as a fifth member and has been informed about previous decisions made by the team before his entry.
 The team decided to reassign the roles within the team (instead of just assigning roles to alex that had already been assigned to somebody else aswell) on a different meeting, because one of the team members is missing.
 The team decided to use trello as the main tool to maintain user stories and the progress of the scrum procedure (https://trello.com/guysguys).
