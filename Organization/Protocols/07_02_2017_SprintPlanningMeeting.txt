@@ -25,4 +25,5 @@ Philip: Design, UI Design (HCI), Testing
 
 The team broke down the requested user stories for the first sprint into tasks.
 
-The team estimated the time required for the initial tasks (0-2, 3-5, 6-10, >10).
+The team estimated the time required for the initial tasks (0-2, 3-5, 6-10, >10) to be 66 hours in total.
+The team decided to still attempt to finish this sprint with the tasks as is.
