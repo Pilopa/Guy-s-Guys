@@ -1,0 +1,28 @@
+Attended: Tiberiu, Alex, Philip, Konstantin
+Start: 15:00pm
+Finish:
+
+The team estimated to work two hours in two timespans per week, one between tuesday
+and the weekend (First Meeting) and one between the weekend and tuesday (Second Meeting).
+
+The team decided to perform one Daily Scrum on tuesday during class and one flexible Daily Scrum 
+on the weekend between friday afternoon and sunday evening.
+
+
+The first estimated initial weekly capacity of the team is 20 hours. The capacity for the first sprint therefore is 60 hours.
+
+The team reviewed the prelimenary user stories with the product owner and generated a prioritized product backlog to 
+created a first sprint backlog from.
+
+The team decided to break down the chosen user stories for each given sprint first before estimating the time.
+
+The team roles are going to be as follows:
+Konstantin: Leader & Scrummaster, Resource manager
+Alex: Requirement Analysis, Analytical Skills, Testing
+Tiberiu: Programmer, Problem Solver, Maintenance, Software Architect
+Ned: Programmer, Software Architect
+Philip: Design, UI Design (HCI), Testing
+
+The team broke down the requested user stories for the first sprint into tasks.
+
+The team estimated the time required for the initial tasks (0-2, 3-5, 6-10, >10).
