@@ -1,0 +1,10 @@
+Attended: Tiberiu, Philip, Alex, Konstantin
+Start: 7:45pm
+Finish: 
+
+Recap of the procedure of this meeting.
+
+Burndown chart backwards-adjusted, in reaction to a misscomunication between Tiberiu and the Scrum Master (Konstantin).
+
+Tasks created:
+- Setup the Database (0-2 hours)
