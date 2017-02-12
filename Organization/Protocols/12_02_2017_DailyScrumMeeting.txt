@@ -1,10 +1,19 @@
 Attended: Tiberiu, Philip, Alex, Konstantin
-Start: 7:45pm
-Finish: 
+Start: 7:45pm (Actual daily scrum: 7:50pm)
+Finish:  (Actual daily scrum: 8:10pm)
 
 Recap of the procedure of this meeting.
+Burn down chart backwards-adjusted, in reaction to a miscommunication between Tiberiu and the Scrum Master (Konstantin). See Commit ad7b635.
+Alex has got a dependency problem, as he needs to wait until the database has been set up.
+Burndown chart backwards-adjusted, in reaction to a misscomunication between Philip and the Scrum Master (Konstantin). See Commit 9a8f8bc.
+The group decided to update the burndown chart at every meeting, in contrast to updating it as they finish work.
+Everyone except Ned, who was not able to attend, has work to do and no unanswered dependencies until the next meeting.
+The next meeting is going to take place on Tuesday 14/02/2017 3:00pm.
 
-Burndown chart backwards-adjusted, in reaction to a misscomunication between Tiberiu and the Scrum Master (Konstantin).
+Konstantin, as Scrum Master and Leader, was taken into consideration for the calculation of the initial capacity, although not strongly participating in the completion of the actual tasks.
+The team decided to ignore this fact for the remainder of the sprint and adjust the schedule for the next sprint accordingly instead.
 
 Tasks created:
 - Setup the Database (0-2 hours)
+- Gather what info the product owner would like displayed. (0-2)
+- Gather the information for the database. (0-2)
