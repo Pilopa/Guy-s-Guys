@@ -5,6 +5,7 @@ Finish: 7:07pm
 Ned brought the misscommunication about the programming language to use to topic.
 An extra discussion (C# vs C++) is going to take place directly after this meeting.
 
-
+Two ambiguous tasks have been found (Setup a sql database system & Setup the database):
+One of the ambiguous tasks has been archived. In result, the overall hours of work in the burndown chart has been updated (-2).
 
 Next daily scrum meeting is going to be on Tuesday 21/02/2017 at 3:00pm in RM603/RM604.
