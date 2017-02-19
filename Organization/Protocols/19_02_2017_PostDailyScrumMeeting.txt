@@ -1,0 +1,6 @@
+Attended: Ned, Tiberiu, Konstantin (Programmers + Scrum Master, no more persons required)
+Start: 7:09pm
+Finish: 7:11 pm
+
+Question: C# or C++ as implementation language
+Answer: The software architects decided to move to C# as implementation language due to previous experience.

@@ -1,0 +1,10 @@
+Attended: Tiberiu, Philip, Ned, Konstantin
+Start: 7:00pm
+Finish: 7:07pm
+
+Ned brought the misscommunication about the programming language to use to topic.
+An extra discussion (C# vs C++) is going to take place directly after this meeting.
+
+
+
+Next daily scrum meeting is going to be on Tuesday 21/02/2017 at 3:00pm in RM603/RM604.
