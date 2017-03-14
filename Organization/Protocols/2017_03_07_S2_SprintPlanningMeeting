@@ -1,0 +1,26 @@
+Attended: Philip, Konstantin, Ned
+Start: 3pm
+Finish: 4:05pm
+
+Agenda:
+1. Capacity Estimation
+2. Move unfinished user stories and tasks back to product backlog
+3. Choose user stories
+4. Create tasks
+5. Estimate tasks
+
+Because of the enrichment week took place and was not taken into account, the team has to decide to either make a two weeks sprint (2. sprint) or push back all sprints by a full week to compensate for the time loss.
+
+Result: The team decided to do a two weeks sprint (2. sprint), starting today 07/03/2017, and then continue with 2 more three weeks sprints (3. and 4. sprint) to have more buffer time at the end.
+
+
+1. Capacity Estimation
+
+As described in "2017_02_28_SprintReviewMeeting", the team is capable of doing 3 hours of work per week per person, excluding the scrum master, which leads to a capacity of 3 * 4 * 2 = 24 hours for this sprint.
+
+2. Done
+3. The team decided to do the user stories: "Users can log in to the system." and "Users can browse and look into membership information."
+4. Done:
+From now on, tasks will have metrics attached to them which determine when it can be considered finished.
+5. Done:
+The combined workload for the sprint is 25 hours. Even though one hour more than the capacity, the team decided to do the sprint as is.
