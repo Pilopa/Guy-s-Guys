@@ -11,3 +11,6 @@ Tasks are not being executed, even though they are at least averagely well plann
 Solution:
 One additional person (Konstantin) is assigned the role of a programmer, so the main workload can be finished by more people.
 This will increase the teams capacity by 3 hours per week as well, as Konstantin previously was not counted into the capacity, because he only had the Scrum Master role.
+
+The current sprint backlog and the burndown chart showed, that we would not be able to successfully finish the sprint right now.
+Hence we will add an additional week of work to this sprint and push all other sprints back by a week.
