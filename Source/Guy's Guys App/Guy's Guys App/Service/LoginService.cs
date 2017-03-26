@@ -1,4 +1,4 @@
-﻿using Guys_Guys_App.Model;
+﻿using Guys_Guys_App.Model.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;

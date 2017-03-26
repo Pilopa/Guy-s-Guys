@@ -17,7 +17,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Guy_s_Guys_App
+namespace Guys_Guys_App
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -35,7 +35,8 @@ namespace Guy_s_Guys_App
             ServiceRegistry = new ServiceRegistry();
 
             // Initialize services
-            ServiceRegistry.Register(new UserProvider());
+            ServiceRegistry.Register(new DataStoreProvider());
+            ServiceRegistry.Register(new UserProvider(ServiceRegistry.GetService<DataStoreService>()));
             ServiceRegistry.Register(new PasswordProvider());
             ServiceRegistry.Register(new LoginProvider(ServiceRegistry.GetService<UserService>(), ServiceRegistry.GetService<PasswordService>()));
 

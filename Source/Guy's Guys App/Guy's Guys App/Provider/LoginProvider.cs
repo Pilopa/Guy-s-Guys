@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Guys_Guys_App.Service;
-using Guys_Guys_App.Model;
+using Guys_Guys_App.Model.Entity;
 using Guys_Guys_App.Model.Exception;
 using Guys_Guys_App.Utility;
 

@@ -1,4 +1,4 @@
-﻿using Guys_Guys_App.Model;
+﻿using Guys_Guys_App.Model.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,5 +17,11 @@ namespace Guys_Guys_App.Service
         /// <param name="username">The username of the user to look up.</param>
         /// <returns>The user or null, if there is no user with the given username.</returns>
         User GetUser(string username);
+
+        /// <summary>
+        /// Returns a list of all users.
+        /// </summary>
+        /// <returns>A list of all users</returns>
+        Task<List<User>> GetUsers();
     }
 }

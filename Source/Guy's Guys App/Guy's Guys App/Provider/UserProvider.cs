@@ -1,16 +1,24 @@
 ﻿using Guys_Guys_App.Service;
+using Guys_Guys_App.Model.Entity;
+using Guys_Guys_App.Utility;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Data.Entity;
 using System.Threading.Tasks;
-using Guys_Guys_App.Model;
-using Guys_Guys_App.Utility;
+using System.Linq;
 
 namespace Guys_Guys_App.Provider
 {
     class UserProvider : UserService
     {
+
+        public DataStoreService DataStoreService { get; private set; }
+
+        public UserProvider(DataStoreService dataStoreService)
+        {
+            this.DataStoreService = dataStoreService;
+        }
+
         #region UserService
 
         public User GetUser(string username)
@@ -18,10 +26,17 @@ namespace Guys_Guys_App.Provider
             if (username.ToLower() == "admin")
             {
                 return new User(username, "admin");
-            } else
+            }
+            else
             {
                 return null;
             }
+        }
+
+        public async Task<List<User>> GetUsers()
+        {
+            using (var db = DataStoreService.GetDataStoreContext())
+                return await db.Set<User>().ToListAsync();
         }
 
         #endregion

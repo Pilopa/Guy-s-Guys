@@ -1,4 +1,4 @@
-﻿using Guys_Guys_App.Model;
+﻿using Guys_Guys_App.Model.Entity;
 using Guys_Guys_App.Model.Exception;
 using Guys_Guys_App.Service;
 using Guys_Guys_App.Utility;
@@ -54,7 +54,7 @@ namespace Guys_Guys_App.View.Control
                     try
                     {
                         User user = loginService.Login(username, password);
-                        MessageBox.Show("Login successful!");
+                        ((MainWindow)Window.GetWindow(this)).ChangePage(new MembershipBrowsingUserControl(ServiceRegistry));
                     }
                     catch (UserNotFoundException)
                     {
