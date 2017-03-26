@@ -37,11 +37,11 @@ namespace Guys_Guys_App.View.Control
             var username = this.txtbx_username.Text;
             var password = this.pwbx_password.Password;
 
-            if (username.Length <= 4)
+            if (username.Length < 4)
             {
                 MessageBox.Show("The username has to be at least 4 characters long!");
             }
-            else if (password.Length <= 4)
+            else if (password.Length < 4)
             {
                 MessageBox.Show("The password has to be at least 4 characters long!");
             }
@@ -63,6 +63,9 @@ namespace Guys_Guys_App.View.Control
                     catch (IncorrectPasswordException)
                     {
                         MessageBox.Show("The password is incorrect!");
+                    } catch (LoginException)
+                    {
+                        MessageBox.Show("An uknown login error occurred!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     }
                 }
                 else

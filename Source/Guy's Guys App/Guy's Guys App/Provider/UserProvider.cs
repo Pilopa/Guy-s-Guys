@@ -23,20 +23,17 @@ namespace Guys_Guys_App.Provider
 
         public User GetUser(string username)
         {
-            if (username.ToLower() == "admin")
-            {
-                return new User(username, "admin");
-            }
-            else
-            {
-                return null;
-            }
+            using (var db = DataStoreService.GetDataStoreContext())
+                return db
+                    .Users
+                    .Where(user => user.Name == username)
+                    .FirstOrDefault();
         }
 
-        public async Task<List<User>> GetUsers()
+        public HashSet<User> GetUsers()
         {
             using (var db = DataStoreService.GetDataStoreContext())
-                return await db.Set<User>().ToListAsync();
+                return new HashSet<User>(db.Users.ToList<User>());
         }
 
         #endregion

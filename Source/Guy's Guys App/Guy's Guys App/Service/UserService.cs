@@ -22,6 +22,6 @@ namespace Guys_Guys_App.Service
         /// Returns a list of all users.
         /// </summary>
         /// <returns>A list of all users</returns>
-        Task<List<User>> GetUsers();
+        HashSet<User> GetUsers();
     }
 }

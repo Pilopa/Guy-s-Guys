@@ -31,10 +31,9 @@ namespace Guys_Guys_App.View.Control
             Refresh();
         }
 
-        public async void Refresh()
+        public void Refresh()
         {
-            var users = await ServiceRegistry.GetService<UserService>().GetUsers();
-            lstbx_members.ItemsSource = users;
+            lstbx_members.ItemsSource = ServiceRegistry.GetService<UserService>().GetUsers();
         }
     }
 }

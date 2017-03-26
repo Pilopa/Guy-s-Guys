@@ -10,18 +10,12 @@ namespace Guys_Guys_App.Provider
 {
     class DataStoreProvider : DataStoreService
     {
-        public DatabaseModel Context { get; set; }
-
-        public DataStoreProvider()
-        {
-            Context = new DatabaseModel();
-        }
 
         #region DataStoreService
 
         public DatabaseModel GetDataStoreContext()
         {
-            return Context;
+            return new DatabaseModel();
         }
 
         #endregion
