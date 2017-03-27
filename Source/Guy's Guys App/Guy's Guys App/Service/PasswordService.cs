@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Guys_Guys_App.Service
 {
-    interface PasswordService : Guys_Guys_App.Utility.Service
+    public interface PasswordService : Guys_Guys_App.Utility.Service
     {
         /// <summary>
         /// Encodes the given password for secure storage.

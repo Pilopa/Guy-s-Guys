@@ -8,7 +8,7 @@ using Guys_Guys_App.Utility;
 
 namespace Guys_Guys_App.Provider
 {
-    class DataStoreProvider : DataStoreService
+    public class DataStoreProvider : DataStoreService
     {
 
         #region DataStoreService
@@ -22,12 +22,12 @@ namespace Guys_Guys_App.Provider
 
         #region Service
 
-        public void onRegistration(ServiceRegistry registry)
+        public void start(ServiceRegistry registry)
         {
             // Do nothing
         }
 
-        public void onDeregistration(ServiceRegistry registry)
+        public void stop(ServiceRegistry registry)
         {
             // Do nothing
         }

@@ -8,7 +8,7 @@ namespace Guys_Guys_App.Utility
 {
     public interface Service
     {
-        void onRegistration(ServiceRegistry registry);
-        void onDeregistration(ServiceRegistry registry);
+        void start(ServiceRegistry registry);
+        void stop(ServiceRegistry registry);
     }
 }

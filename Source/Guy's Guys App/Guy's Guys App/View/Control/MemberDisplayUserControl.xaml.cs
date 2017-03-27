@@ -1,5 +1,4 @@
 ﻿using Guys_Guys_App.Model.Entity;
-using Guys_Guys_App.Service;
 using Guys_Guys_App.Utility;
 using System;
 using System.Collections.Generic;
@@ -19,32 +18,30 @@ using System.Windows.Shapes;
 namespace Guys_Guys_App.View.Control
 {
     /// <summary>
-    /// Interaction logic for MembershipBrowsingUserControl.xaml
+    /// Interaction logic for MemberDisplayUserControl.xaml
     /// </summary>
-    public partial class MembershipBrowsingUserControl : UserControl
+    public partial class MemberDisplayUserControl : UserControl
     {
         public ServiceRegistry ServiceRegistry { get; private set; }
+        public User Displayed { get; private set; }
 
-        public MembershipBrowsingUserControl(ServiceRegistry registry)
+        public MemberDisplayUserControl(ServiceRegistry registry, User toDisplay)
         {
             InitializeComponent();
             this.ServiceRegistry = registry;
+            this.Displayed = toDisplay;
             Refresh();
         }
 
         public void Refresh()
         {
-            lstbx_members.ItemsSource = ServiceRegistry.GetService<UserService>().GetUsers();
+            this.txtbx_id.Text = Displayed.Id.ToString();
+            this.txtbx_name.Text = Displayed.Name;
         }
 
-        private void lstbx_members_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        private void btn_back_Click(object sender, RoutedEventArgs e)
         {
-            var selection = lstbx_members.SelectedItem;
-
-            if (selection != null)
-            {
-                ((MainWindow)Window.GetWindow(this)).ChangePage(new MemberDisplayUserControl(ServiceRegistry, (User) selection));
-            }
+            ((MainWindow)Window.GetWindow(this)).ChangePage(new MembershipBrowsingUserControl(ServiceRegistry));
         }
     }
 }

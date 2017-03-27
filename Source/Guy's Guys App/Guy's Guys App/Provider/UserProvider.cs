@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace Guys_Guys_App.Provider
 {
-    class UserProvider : UserService
+    public class UserProvider : UserService
     {
 
         public DataStoreService DataStoreService { get; private set; }
@@ -40,12 +40,12 @@ namespace Guys_Guys_App.Provider
 
         #region Service
 
-        public void onDeregistration(ServiceRegistry registry)
+        public void stop(ServiceRegistry registry)
         {
             // Do nothing
         }
 
-        public void onRegistration(ServiceRegistry registry)
+        public void start(ServiceRegistry registry)
         {
             // Do nothing
         }

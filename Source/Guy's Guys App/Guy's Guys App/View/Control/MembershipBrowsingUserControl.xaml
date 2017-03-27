@@ -8,6 +8,6 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <StackPanel HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300">
         <Label x:Name="lbl_membershipbrowsing" Content="Browse Members" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
-        <ListBox x:Name="lstbx_members" Height="259"/>
+        <ListBox x:Name="lstbx_members" Height="259" MouseDoubleClick="lstbx_members_MouseDoubleClick"/>
     </StackPanel>
 </UserControl>

@@ -53,7 +53,7 @@ namespace Guys_Guys_App.View.Control
                 {
                     try
                     {
-                        User user = loginService.Login(username, password);
+                        loginService.Login(username, password);
                         ((MainWindow)Window.GetWindow(this)).ChangePage(new MembershipBrowsingUserControl(ServiceRegistry));
                     }
                     catch (UserNotFoundException)

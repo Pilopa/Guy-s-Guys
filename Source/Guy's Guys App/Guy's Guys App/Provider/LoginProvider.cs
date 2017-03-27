@@ -10,10 +10,11 @@ using Guys_Guys_App.Utility;
 
 namespace Guys_Guys_App.Provider
 {
-    class LoginProvider : LoginService
+    public class LoginProvider : LoginService
     {
         private UserService UserService { get; set; }
         private PasswordService PasswordService { get; set; }
+        private User ActiveUser { get; set; }
 
         public LoginProvider(UserService userService, PasswordService passwordService)
         {
@@ -25,6 +26,9 @@ namespace Guys_Guys_App.Provider
 
         public User Login(string username, string password)
         {
+            // Check if the user is already logged in
+            if (ActiveUser != null) return ActiveUser;
+
             // Attempt to retrieve user from user service
             User loginUser = null;
             try
@@ -40,7 +44,8 @@ namespace Guys_Guys_App.Provider
             {
                 // If yes, verify the password
                 if(PasswordService.Verify(password, loginUser.Password)) {
-                    return loginUser;
+                    ActiveUser = loginUser;
+                    return ActiveUser;
                 } else
                 {
                     throw new IncorrectPasswordException();
@@ -51,16 +56,21 @@ namespace Guys_Guys_App.Provider
             }
         }
 
+        public User GetActiveUser()
+        {
+            return ActiveUser;
+        }
+
         #endregion
 
         #region Service
 
-        public void onRegistration(ServiceRegistry registry)
+        public void start(ServiceRegistry registry)
         {
             // Do nothing
         }
 
-        public void onDeregistration(ServiceRegistry registry)
+        public void stop(ServiceRegistry registry)
         {
             // Do nothing
         }

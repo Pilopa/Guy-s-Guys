@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Guys_Guys_App"
         mc:Ignorable="d"
-        Title="Guy's Guys Application" Height="600" Width="800">
-    <ContentControl Name="ContentHolder" />
+        Title="Guy's Guys Application" Height="300" Width="300">
+    <Viewbox HorizontalAlignment="Left" Margin="10,10,-8,0" VerticalAlignment="Top"  Stretch="Uniform">
+        <ContentControl Name="ContentHolder" />
+    </Viewbox>
 </Window>

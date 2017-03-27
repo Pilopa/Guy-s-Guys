@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guys_Guys_App.Model.Exception;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,9 @@ namespace Guys_Guys_App.Utility
         /// <summary>
         /// Registeres the given provider under all services it implements.
         /// If this provider has not been registered at all before, its
-        /// <code><see cref="Service.onRegistration(ServiceRegistry)"/></code> method will be called.
+        /// <code><see cref="Service.start(ServiceRegistry)"/></code> method will be called.
+        /// Throws a <code><see cref="ServiceRegistrationException"/></code> if the service could not be started.
+        /// Does nothing if the service is already registered in each of its categories.
         /// </summary>
         /// <param name="provider">The provider to register</param>
         public void Register(Service provider)
@@ -44,14 +47,29 @@ namespace Guys_Guys_App.Utility
             if (isNew)
             {
                 // Call registration event
-                provider.onRegistration(this);
+                try
+                {
+                    provider.start(this);
+                } catch (Exception e)
+                {
+                    try
+                    {
+                        Deregister(provider);
+                    } catch (ServiceDeregistrationException ee)
+                    {
+                        throw new ServiceRegistrationException("Service registration threw an exception", ee);
+                    }
+                    throw new ServiceRegistrationException("Service registration threw an exception", e);
+                }
             }
         }
 
         /// <summary>
         /// Deregisteres the given provider from all services it implements.
         /// If this provider has been actually registered, its
-        /// <code><see cref="Service.onDeregistration(ServiceRegistry)"/></code> method will be called.
+        /// <code><see cref="Service.stop(ServiceRegistry)"/></code> method will be called.
+        /// Throws a <code><see cref="ServiceDeregistrationException"/></code> if the service could not be stopped.
+        /// Does nothing if the service is not registered in any of its categories.
         /// </summary>
         /// <param name="provider">The provider to register</param>
         public void Deregister(Service provider)
@@ -76,7 +94,12 @@ namespace Guys_Guys_App.Utility
             if (existed)
             {
                 // Call registration event
-                provider.onDeregistration(this);
+                try { 
+                    provider.stop(this);
+                } catch (Exception e)
+                {
+                    throw new ServiceDeregistrationException("Service deregistration threw an exception", e);
+                }
             }
         }
 
@@ -109,6 +132,28 @@ namespace Guys_Guys_App.Utility
             {
                 return default(T);
             }
+        }
+
+        /// <summary>
+        /// Stops and deregisters all services.
+        /// Throws <code><see cref="ServiceDeregistrationException"/></code>s where appropriate.
+        /// </summary>
+        public void Clear()
+        {
+            var services = GetServices().ToArray();
+            foreach (Service service in services)
+            {
+                Deregister(service);
+            }
+        }
+
+        /// <summary>
+        /// Returns a list of all registered services. Does not contain information about categories.
+        /// </summary>
+        /// <returns>A list of all registered services</returns>
+        public IEnumerable<Service> GetServices()
+        {
+            return Services.ContainsKey(typeof(Service).Name) ? Services[typeof(Service).Name] : new HashSet<Service>();
         }
 
         public override string ToString()

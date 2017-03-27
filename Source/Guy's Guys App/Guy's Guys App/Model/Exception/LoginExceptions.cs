@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Guys_Guys_App.Model.Exception
 {
-    class LoginException : System.Exception
+    public class LoginException : System.Exception
     {
         public LoginException()
         {
@@ -21,7 +21,7 @@ namespace Guys_Guys_App.Model.Exception
         }
     }
 
-    class UserNotFoundException : LoginException
+    public class UserNotFoundException : LoginException
     {
         public UserNotFoundException()
         {
@@ -32,7 +32,7 @@ namespace Guys_Guys_App.Model.Exception
         }
     }
 
-    class IncorrectPasswordException : LoginException
+    public class IncorrectPasswordException : LoginException
     {
         public IncorrectPasswordException()
         {

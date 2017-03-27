@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Guys_Guys_App.Service
 {
-    interface UserService : Guys_Guys_App.Utility.Service
+    public interface UserService : Guys_Guys_App.Utility.Service
     {
         /// <summary>
         /// Retrieves the user from an underlying data store and returns it, if possible.
